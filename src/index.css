@@ -1,13 +1,87 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-linear-gradient(90deg, #13dc8e, #00cfe9, #64b2f8);
+  background: linear-gradient(90deg, #13dc8e, #00cfe9, #64b2f8);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-form{
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn{
+  display: flex;
+}
+
+.todo-box{
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.todo-box .content{
+  display: flex;
+  background-color: white;
+  width: 680px;
+}
+
+.todo-box .content p{
+  margin-top: 17px;
+  margin-left: 6px;
+}
+
+.checkbox {
+  margin-left: 20px;
+}
+
+.todo-box span{
+  margin: 0;
+}
+
+.delete-all{
+  width: 400px;
+  margin-top: 35px;
+}
+
+.actions-box{
+  cursor: pointer;
+}
+
+.back-btn{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.edit {
+  background-color: #13dc8e;
+  width: 20px;
+  height: 30px;
+}
+
+.trash {
+  background-color: #e21818;
+  width: 20px;
+  height: 30px;
+  align-items: center;
 }
